@@ -37,7 +37,7 @@ def remove_line_filler(line):
 
 # extracts features depending on the context_information_type (words or category, extra the 2 contexts before and after
 # the index
-# TODO: implement category extraction, same logic as words extraction
+# TODO: implement category extraction, same logic as words extraction, feel free to rename variables!!
 def extract_features(file, context_information_type):
     words_list = file[0]
     words_before_after_idx = []
@@ -52,8 +52,12 @@ def extract_features(file, context_information_type):
 
             # smallest_idx: idx du mot - 2 positions avant
             smallest_idx = interest_idx - 2
+
+            """
+            if we're unable to keep 2 words before the idx (out of bound), start at the beginning of the list at idx 0
+            and append the words until we reach the idx, else append 2 words before the idx as per usual
+            """
             if smallest_idx <= 0:
-                # start the count at the beginning of the list
                 smallest_idx = 0
                 while smallest_idx < interest_idx:
                     context_before_idx.append(x[smallest_idx])
@@ -65,6 +69,11 @@ def extract_features(file, context_information_type):
 
             # bigger_idx: idx du mot + 2 positions apres
             bigger_idx = interest_idx + 2
+
+            """
+            if we're unable to keep 2 words after the idx (out of bound), start at the end of the list at len(list)
+            and append the words until we reach the idx, else append 2 words after the idx as per usual
+            """
             if bigger_idx >= len(x):
                 bigger_idx = len(x) - 1
                 while bigger_idx > interest_idx:
