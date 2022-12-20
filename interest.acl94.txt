@@ -1938,7 +1938,7 @@ $$
 $$
 [ nbc/NP ] may/MD yet/RB find/VB [ a/DT way/NN ] to/TO take/VB [ a/DT passive/JJ ] ,/, [ minority/NN interest_5/NN ] in/IN [ a/DT program-maker/NN ] without/IN violating/VBG [ the/DT rules/NNS ] ./. 
 $$
-since/IN [ nbc/NP 's/POS interest_1/NN ] in/IN [ the/DT qintex/NP bid/NN ] for/IN [ MGMNP ] was/VBD disclosed/VBN ,/, [ mr./NP wright/NP ] has/VBZ n't/RB been/VBN available/JJ for/IN [ comment/NN ] ./. 
+since/IN [ nbc/NP 's/POS interest_1/NN ] in/IN [ the/DT qintex/NP bid/NN ] for/IN [ MGM/NP ] was/VBD disclosed/VBN ,/, [ mr./NP wright/NP ] has/VBZ n't/RB been/VBN available/JJ for/IN [ comment/NN ] ./.
 $$
 ====================================== [ the/DT u.s./NP ] always/RB ought/MD to/TO stand/VB up/IN for/IN [ its/PP$ interests_4/NNS ] ,/, but/CC [ it/PP ] 's/VBZ essential/JJ that/IN [ u.s./NP officials/NNS ] have/VBP [ an/DT appreciation/NN ] of/IN [ the/DT politics/NNS ] and/CC [ history/NN ] of/IN [ our/PP$ allies/NNS ] ./. 
 $$
@@ -3320,7 +3320,7 @@ $$
 $$
 ''/'' [ producer/NN ] and/CC [ founder/NN aaron/NP spelling/NP ] ,/, in/IN [ a/DT release/NN ] ,/, spoke/VBD of/IN ``/`` [ recent/JJ expressions/NNS ] of/IN [ interest_1/NN ] in/IN [ the/DT company/NN ] ,/, ''/'' and/CC [ ronald/NP lightstone/NP ] ,/, [ executive/JJ vice/NN president/NN ] ,/, said/VBD [ several/JJ companies/NNS ] had/VBD inquired/VBN about/IN [ a/DT possible/JJ bid/NN ] but/CC would/MD n't/RB specify/VB if/IN [ an/DT offer/NN ] is/VBZ actually/RB on/IN [ the/DT table/NN ] ./. 
 $$
-[ c./NP itoh/NP ] was/VBD [ one/AB ] of/IN [ many/JJ companies/NNS ] [ that/WDT ] talked/VBD about/IN buying/VBG at/IN [ least/JJS an/DT equity/NN interest_5/NN ] in/IN [ MGMNP ] ;/: [ jvcvictor/NP co./NP ] of/IN [ japan/NP ] ,/, [ which/WDT ] is/VBZ [ 50/AB %/NN ] owned/VBN by/IN [ matsushita/NP ] ,/, recently/RB agreed/VBD to/TO invest/VB more/JJR than/IN [ $/$ 100/AB million/AB ] in/IN [ a/DT joint/JJ venture/NN ] with/IN [ independent/JJ hollywood/NP producer/NN larry/NP gordon/NP ] to/TO produce/VB and/CC finance/VB [ motion/NN pictures/NNS ] ./. 
+[ c./NP itoh/NP ] was/VBD [ one/AB ] of/IN [ many/JJ companies/NNS ] [ that/WDT ] talked/VBD about/IN buying/VBG at/IN [ least/JJS an/DT equity/NN interest_5/NN ] in/IN [ MGM/NP ] ;/: [ jvcvictor/NP co./NP ] of/IN [ japan/NP ] ,/, [ which/WDT ] is/VBZ [ 50/AB %/NN ] owned/VBN by/IN [ matsushita/NP ] ,/, recently/RB agreed/VBD to/TO invest/VB more/JJR than/IN [ $/$ 100/AB million/AB ] in/IN [ a/DT joint/JJ venture/NN ] with/IN [ independent/JJ hollywood/NP producer/NN larry/NP gordon/NP ] to/TO produce/VB and/CC finance/VB [ motion/NN pictures/NNS ] ./.
 $$
 ====================================== [ john/NP m./NP russell/NP ] ,/, [ senior/JJ vice/NN president/NN ] and/CC [ chief/NN financial/JJ officer/NN ] ,/, resigned/VBD to/TO pursue/VB [ other/JJ interests_3/NNS ] ./. 
 $$
@@ -4628,7 +4628,7 @@ $$
 $$
 ====================================== [ united/NP brands/NP co./NP ] said/VBD [ it/PP ] sold/VBD [ its/PP$ 18.5/AB %/NN interest_5/NN ] in/IN [ fii/NP fyffes/NP plc/NP ] ,/, [ a/DT distributor/NN ] of/IN [ fresh/JJ fruit/NN ] and/CC [ vegetables/NNS ] ,/, principally/RB in/IN [ the/DT united/NP kingdom/NP ] ./. 
 $$
-====================================== [ mr./NP kerkorian/NP ] began/VBD trying/VBG to/TO sell/VB [ MGMNP ] [ some/DT 18/AB months/NNS ] ago/RB ,/, and/CC [ a/DT long/JJ list/NN ] of/IN [ companies/NNS ] expressed/VBD [ an/DT interest_1/NN ] ,/, including/VBG [ walt/NP disney/NP co./NP ] ,/, [ mca/NP inc./NP ] ,/, and/CC [ davis/NP cos./NP ] ,/, controlled/VBN by/IN [ marvin/NP davis/NP ] ./. 
+====================================== [ mr./NP kerkorian/NP ] began/VBD trying/VBG to/TO sell/VB [ MGM/NP ] [ some/DT 18/AB months/NNS ] ago/RB ,/, and/CC [ a/DT long/JJ list/NN ] of/IN [ companies/NNS ] expressed/VBD [ an/DT interest_1/NN ] ,/, including/VBG [ walt/NP disney/NP co./NP ] ,/, [ mca/NP inc./NP ] ,/, and/CC [ davis/NP cos./NP ] ,/, controlled/VBN by/IN [ marvin/NP davis/NP ] ./.
 $$
 ====================================== still/RB [ unresolved/JJ ] is/VBZ [ the/DT key/JJ question/NN ] in/IN [ the/DT case/NN ] :/: whether/IN [ rates/NNS ] will/MD be/VB increased/VBN enough/RB to/TO satisfy/VB [ the/DT interests_4/NNS ] of/IN [ investors/NNS ] in/IN [ the/DT troubled/VBN utility/NN ] ,/, or/CC whether/IN [ increases/NNS ] will/MD be/VB held/VBN down/RB in/IN [ the/DT *interests/NNS ] of/IN [ the/DT utility/NN 's/POS customers/NNS ] ./. 
 $$
