@@ -8,31 +8,31 @@ from main import data_file, dict_word, dict_category, three_before_and_after, \
 
 def naiveBayes_one(file, context_information_type):
     X, Y = one_before_and_after(data_file(file), dict_word(file), dict_category(file), context_information_type)
-    X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=0.30,
-                                                                        random_state=100)
+    X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=0.30)
     gnb = GaussianNB()
     gnb.fit(X_train, Y_train)
     Y_pred = gnb.predict(X_test)
-    print("Accuracy:", metrics.accuracy_score(Y_test, Y_pred))
+    y_accuracy = metrics.accuracy_score(Y_test, Y_pred)
+    print("Accuracy:", "%.2f" % (y_accuracy * 100), "%")
 
 def naiveBayes_two(file, context_information_type):
     X, Y = two_before_and_after(data_file(file), dict_word(file), dict_category(file), context_information_type)
-    X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=0.30,
-                                                                        random_state=100)
+    X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=0.30)
     gnb = GaussianNB()
     gnb.fit(X_train, Y_train)
     Y_pred = gnb.predict(X_test)
-    print("Accuracy:", metrics.accuracy_score(Y_test, Y_pred))
+    y_accuracy = metrics.accuracy_score(Y_test, Y_pred)
+    print("Accuracy:", "%.2f" % (y_accuracy * 100), "%")
 
 
 def naiveBayes_three(file, context_information_type):
     X, Y = three_before_and_after(data_file(file), dict_word(file), dict_category(file), context_information_type)
-    X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=0.30,
-                                                                        random_state=100)
+    X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=0.30)
     gnb = GaussianNB()
     gnb.fit(X_train, Y_train)
     Y_pred = gnb.predict(X_test)
-    print("Accuracy:", metrics.accuracy_score(Y_test, Y_pred))
+    y_accuracy = metrics.accuracy_score(Y_test, Y_pred)
+    print("Accuracy:", "%.2f" % (y_accuracy * 100), "%")
 
 print("***Classifier: Naive Bayes with 1 word/category***")
 print("Feature: words")
