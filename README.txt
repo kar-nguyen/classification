@@ -11,4 +11,6 @@ qui contiennent les classificateurs afin de simplifier le tout. Le fichier main.
 two_before_and_after et three_before_and_after et comme le nom le dit, vont nous permettre d'aller chercher les 1, 2 ou 3 mots/catégories avant et après
 "interest".
 
+Les détails concernant les résultats ainsi que l'analyse de ces derniers se retrouvent dans le rapport.
+
 
