@@ -23,7 +23,8 @@ def data_file(file_name):
 
     return data
 
-# returns a list of 2 lists (lists of words and lists of categories)
+# returns a dictionary containing every word and a number in ascending
+#order associated to each one
 def dict_word(file_name):
     dict_word = {}
     with open(file_name) as f:
@@ -38,8 +39,10 @@ def dict_word(file_name):
                         dict_word[i] = len(dict_word) + 1
     return dict_word
 
-def dict_categorie(file_name):
-    dictcategories ={}
+# returns a dictionary containing every category and a number in ascending
+#order associated to each one
+def dict_category(file_name):
+    dictcategories = {}
     with open(file_name) as f:
         lines = f.readlines()
         for line in lines:
@@ -61,7 +64,9 @@ def remove_line_filler(line):
     current_line = current_line.replace('/', ' ')
     return list(filter(None, current_line.split(' ')))  # removes all the whitespaces in line
 
-def one_before_and_after(file, dict_word , dict_categories, context_information_type):
+# extracts features depending on the context_information_type (words or category)
+#returns one word before and after "interest"
+def one_before_and_after(file, dict_word, dict_categories, context_information_type):
     words_list = file[0]
     categories_list = file[1]
 
@@ -81,7 +86,7 @@ def one_before_and_after(file, dict_word , dict_categories, context_information_
         interest_idx, interest_sense = index_lookup(x, 'interest')
 
 
-        # smallest_idx: idx du mot - 1 positions avant
+        # smallest_idx: word idx + 1 space before
         smallest_idx = interest_idx - 1
 
         """
@@ -101,7 +106,7 @@ def one_before_and_after(file, dict_word , dict_categories, context_information_
                 categories_before_idx.append(dict_categories[y[smallest_idx]])
                 smallest_idx += 1
 
-        # bigger_idx: idx du mot + 1 positions apres
+        # bigger_idx: word idx + 1 space after
         bigger_idx = interest_idx + 1
 
         """
@@ -124,6 +129,8 @@ def one_before_and_after(file, dict_word , dict_categories, context_information_
         extracted_word_outputs = words_before_idx + words_after_idx
         extracted_categories_outputs = categories_before_idx + categories_after_idx
 
+        #in order to avoid having data with uneven number of values
+        #i.e. we remove the ones who do not have 1 word before or after (beginning/end of array)
         if (len(extracted_categories_outputs)) == 2:
             categories_before_after_idx.append(extracted_categories_outputs)
         if (len(extracted_word_outputs)) == 2:
@@ -138,7 +145,8 @@ def one_before_and_after(file, dict_word , dict_categories, context_information_
         return categories_before_after_idx, interests_list
 
 # extracts features depending on the context_information_type (words or category)
-def two_before_and_after(file, dict_word , dict_categories, context_information_type):
+#returns 2 words before and after "interest"
+def two_before_and_after(file, dict_word, dict_categories, context_information_type):
     words_list = file[0]
     categories_list = file[1]
 
@@ -158,7 +166,7 @@ def two_before_and_after(file, dict_word , dict_categories, context_information_
         interest_idx, interest_sense = index_lookup(x, 'interest')
 
 
-        # smallest_idx: idx du mot - 2 positions avant
+        # smallest_idx: word idx - 2 spaces before
         smallest_idx = interest_idx - 2
 
         """
@@ -178,7 +186,7 @@ def two_before_and_after(file, dict_word , dict_categories, context_information_
                 categories_before_idx.append(dict_categories[y[smallest_idx]])
                 smallest_idx += 1
 
-        # bigger_idx: idx du mot + 2 positions apres
+        # bigger_idx: word idx + 2 spaces after
         bigger_idx = interest_idx + 2
 
         """
@@ -201,6 +209,9 @@ def two_before_and_after(file, dict_word , dict_categories, context_information_
         extracted_word_outputs = words_before_idx + words_after_idx
         extracted_categories_outputs = categories_before_idx + categories_after_idx
 
+        # in order to avoid having data with uneven number of values
+        # i.e. we remove the ones who do not have 2 words before or after (beginning/end of array)
+
         if (len(extracted_categories_outputs)) == 4:
             categories_before_after_idx.append(extracted_categories_outputs)
         if (len(extracted_word_outputs)) == 4:
@@ -214,6 +225,8 @@ def two_before_and_after(file, dict_word , dict_categories, context_information_
     elif context_information_type == 'categories':
         return categories_before_after_idx, interests_list
 
+# extracts features depending on the context_information_type (words or category)
+#returns 3 words before and after "interest"
 def three_before_and_after(file, dict_word, dict_categories, context_information_type):
         words_list = file[0]
         categories_list = file[1]
@@ -233,7 +246,7 @@ def three_before_and_after(file, dict_word, dict_categories, context_information
 
             interest_idx, interest_sense = index_lookup(x, 'interest')
 
-            # smallest_idx: idx du mot - 3 positions avant
+            # smallest_idx: word idx - 3 spaces before
             smallest_idx = interest_idx - 3
 
             """
@@ -253,7 +266,7 @@ def three_before_and_after(file, dict_word, dict_categories, context_information
                     categories_before_idx.append(dict_categories[y[smallest_idx]])
                     smallest_idx += 1
 
-            # bigger_idx: idx du mot + 3 positions apres
+            # bigger_idx: word idx + 3 spaces after
             bigger_idx = interest_idx + 3
 
             """
@@ -275,6 +288,9 @@ def three_before_and_after(file, dict_word, dict_categories, context_information
 
             extracted_word_outputs = words_before_idx + words_after_idx
             extracted_categories_outputs = categories_before_idx + categories_after_idx
+
+            # in order to avoid having data with uneven number of values
+            # i.e. we remove the ones who do not have 3 words before or after (beginning/end of array)
 
             if (len(extracted_categories_outputs)) == 6:
                 categories_before_after_idx.append(extracted_categories_outputs)
