@@ -13,4 +13,5 @@ two_before_and_after et three_before_and_after et comme le nom le dit, vont nous
 
 Les détails concernant les résultats ainsi que l'analyse de ces derniers se retrouvent dans le rapport.
 
+Le lien github pour voir notre repo si jamais cela peut aider: https://github.com/kar-nguyen/classification.git
 
